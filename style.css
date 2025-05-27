@@ -22,7 +22,7 @@ body {
 }
 header {
   /* border: 1px solid black; */
-  width: 100%;
+  /* width: 100%; */
   display: flex;
   justify-content: space-between;
 }
@@ -71,6 +71,7 @@ header {
   transform: scale(1.1);
 }
 main {
+  width: 100%;
   display: grid;
   grid-template-columns: 50% 50%;
 }
@@ -78,7 +79,7 @@ section.content {
   border: 1px solid black;
 }
 section.content h1 {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   font-size: 4rem;
   font-weight: 900;
   margin: 10rem 0rem 0rem 5rem;
@@ -97,6 +98,59 @@ section.content h1 span {
   -webkit-text-fill-color: transparent; /* For Safari */
 }
 
+section.content p{
+   margin: 1rem 0rem 0rem 5rem;
+   font-size: 1.3rem;
+   font-weight: 300; 
+
+}
+section #button-wrapper{
+  /* border: 1px solid black; */
+  width: fit-content;
+  margin: 1rem 0rem 0rem 5rem;
+  display: flex;
+  gap: 1rem;
+
+}
+section #button-wrapper .filled-btn{
+  background-color: var(--accent-green);
+  width: 13rem;
+  height: 3rem;
+  border: none;
+  border-radius: 40px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+section #button-wrapper .filled-btn:hover {
+  transform: scale(1.1);
+}
+section #button-wrapper .unfilled-btn{
+  background-color: transparent;
+  width: 13rem;
+  height: 3rem;
+  border: 2px solid var(--accent-green);
+  border-radius: 40px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: var(--accent-green);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+section #button-wrapper .unfilled-btn:hover{
+  transform: scale(1.1);
+}
 section.illustration {
   border: 1px solid red;
+  width: 100%;
 }
+section.illustration img {
+  border: 1px solid palevioletred;
+  width: 40rem;
+  height: 100%;
+  object-fit: cover;
+  margin-left: 10rem;
+}
+
