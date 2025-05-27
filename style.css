@@ -22,7 +22,7 @@ body {
 }
 header {
   /* border: 1px solid black; */
-  /* width: 100%; */
+  width: 100%;
   display: flex;
   justify-content: space-between;
 }
@@ -37,7 +37,7 @@ header {
   display: flex;
   height: fit-content;
   gap: 3rem;
-  margin: 2rem 5rem 1rem 2.5rem;
+  margin: 2rem 5rem 1rem 5rem;
 }
 .nav-elements li {
   display: flex;
@@ -70,49 +70,56 @@ header {
 .btn:hover {
   transform: scale(1.1);
 }
-main {
+/* *variables */
+main.hero{
   width: 100%;
   display: grid;
   grid-template-columns: 50% 50%;
-}
-section.content {
-  border: 1px solid black;
-}
-section.content h1 {
   /* border: 1px solid black; */
-  font-size: 4rem;
-  font-weight: 900;
-  margin: 10rem 0rem 0rem 5rem;
-  width: fit-content;
 }
-
-section.content h1 span {
-  background: linear-gradient(
-    90deg,
-    var(--accent-green),
-    var(--gradient-yellow)
-  );
+div.content{
+  /* border: 1px solid hotpink; */
+}
+div.content h1{
+  margin-top: 5rem;
+  margin-left: 5rem;
+  font-size:5rem;
+  /* border: 1px solid red; */
+}
+div.content h1 span{
+  font-size: 4.6rem;
+  background: -webkit-linear-gradient(360deg, var(--accent-green), var(--gradient-yellow));
+  background-size: 200% 100%;
+  background-repeat: repeat;
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  -webkit-text-fill-color: transparent; /* For Safari */
+  -webkit-text-fill-color: transparent;
+  font-weight: bolder;
+  cursor: pointer;
+  animation: textShine 5s ease-in-out infinite alternate;
 }
-
-section.content p{
-   margin: 1rem 0rem 0rem 5rem;
-   font-size: 1.3rem;
-   font-weight: 300; 
+@keyframes textShine {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+div.content p{
+  margin-top: 0.5rem;
+  margin-left: 5rem;
+  font-size: 1.4rem;
 
 }
-section #button-wrapper{
-  /* border: 1px solid black; */
-  width: fit-content;
-  margin: 1rem 0rem 0rem 5rem;
+div.but-container{
+  margin-top: 1.2rem;
+  margin-left: 5rem;
   display: flex;
   gap: 1rem;
-
 }
-section #button-wrapper .filled-btn{
+.filled-btn {
   background-color: var(--accent-green);
   width: 13rem;
   height: 3rem;
@@ -123,11 +130,12 @@ section #button-wrapper .filled-btn{
   color: white;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+  padding: 0.5rem;
 }
-section #button-wrapper .filled-btn:hover {
+.filled-btn:hover {
   transform: scale(1.1);
 }
-section #button-wrapper .unfilled-btn{
+.unfilled-btn {
   background-color: transparent;
   width: 13rem;
   height: 3rem;
@@ -138,19 +146,19 @@ section #button-wrapper .unfilled-btn{
   color: var(--accent-green);
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+  padding: 0.5rem;
 }
-section #button-wrapper .unfilled-btn:hover{
+.unfilled-btn:hover {
   transform: scale(1.1);
 }
-section.illustration {
-  border: 1px solid red;
-  width: 100%;
+div.hero-img{
+  /* border: 1px solid blue; */
+  display: flex;
+  justify-content: center;
 }
-section.illustration img {
-  border: 1px solid palevioletred;
+div.hero-img img{
+  /* border: 1px solid black; */
   width: 40rem;
-  height: 100%;
-  object-fit: cover;
-  margin-left: 10rem;
+  margin-bottom: 2rem;
+  /* transition: all 0.3s ease-in-out; */
 }
-
