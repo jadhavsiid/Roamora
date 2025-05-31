@@ -257,7 +257,7 @@ div.info {
 div.pricing-container {
   /* border: 1px solid black; */
   width: 90%;
-  height: 100vh;
+  /* height: 100vh; */
   margin: 2rem auto;
 }
 div.pricing-container h1 {
@@ -272,26 +272,28 @@ div.pricing-cards {
   /* border: 1px solid red; */
   gap: 2.5rem;
 }
+/* * basic section */
 div.basic-section {
   border: 1px solid rgba(0, 0, 0, 21%);
   background-color: white;
   border-radius: 25px;
-  height: 35rem;
+  height: 567px;
+  width: 385px;
 }
 div.basic-section img {
   margin-top: 1.5rem;
   margin-left: 1.5rem;
 }
 div.basic-section h3 {
-  margin-left: 2.7rem;
+  margin-left: 2.3rem;
   margin-top: 0.5rem;
   font-size: 2.1rem;
   color: var(--accent-green);
 }
 div.basic-section p {
-  margin-left: 2.7rem;
+  margin-left: 2.3rem;
   margin-top: 0.5rem;
-  font-size: 4.5rem;
+  font-size: 4.3rem;
   font-weight: bold;
 }
 div.basic-section p span {
@@ -303,46 +305,196 @@ div.basic-section button {
   padding: 0.8rem;
   border: none;
   border-radius: 20px;
-  width: 22rem;
+  width: 20rem;
   font-size: 1.3rem;
   font-weight: bold;
   font-family: "Outfit", sans-serif;
   background-color: var(--accent-green);
   color: white;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
 }
-div.feature-cont{
+div.basic-section button:hover {
+  transform: scale(1.1);
+}
+div.basic-feature-cont {
   /* border: 1px solid black; */
-  margin-top: 2rem;
+  margin-top: 1rem;
   margin-bottom: 2rem;
-
 }
-div.feature-wrapper{
+div.basic-feature-wrapper {
   margin-top: 0.5rem;
   display: flex;
   gap: 0.5rem;
   align-items: center;
 }
-div.feature-wrapper img{
+div.basic-feature-wrapper img {
   /* border: 1px solid blue;
   width: 1.5rem; */
   height: 1.5rem;
   margin-left: 3.5rem;
   margin-top: 0.5rem;
 }
-div.feature-wrapper li{
+div.basic-feature-wrapper li {
   /* border: 1px solid red; */
   margin-top: 0.5rem;
   list-style: none;
   font-weight: bold;
   font-size: 1.2rem;
 }
+/* * explorer section */
 div.explorer-section {
   border: none;
   background-color: var(--accent-green);
-  border-radius: 40px;
+  border-radius: 25px;
+  height: 601px;
+  width: 385px;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.25);
 }
+div.popular-container {
+  display: flex;
+  justify-content: flex-end;
+}
+p.popular {
+  background-color: white;
+  width: fit-content;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  padding: 0.5rem 2rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+div.explorer-section img {
+  margin-top: -1.5rem;
+  margin-left: 1.5rem;
+}
+div.explorer-section h3 {
+  margin-left: 2.3rem;
+  margin-top: 0.5rem;
+  font-size: 2.1rem;
+  color: white;
+}
+div.explorer-section p.para {
+  margin-left: 2.3rem;
+  margin-top: 0.5rem;
+  font-size: 4.3rem;
+  font-weight: bold;
+  color: white;
+}
+div.explorer-section p.para span {
+  font-size: 1.5rem;
+}
+div.explorer-section button {
+  margin-left: 1.7rem;
+  margin-top: 0.8rem;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 20px;
+  width: 20rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+  font-family: "Outfit", sans-serif;
+  background-color: white;
+  color: var(--accent-green);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+div.explorer-section button:hover{
+  transform: scale(1.1);
+}
+div.explorer-feature-cont {
+  /* border: 1px solid black; */
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+div.explorer-feature-wrapper {
+  margin-top: 0.5rem;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+div.explorer-feature-wrapper img {
+  /* border: 1px solid blue;
+  width: 1.5rem; */
+  height: 1.5rem;
+  margin-left: 3.5rem;
+  margin-top: 0.5rem;
+}
+div.explorer-feature-wrapper li {
+  /* border: 1px solid red; */
+  margin-top: 0.5rem;
+  list-style: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: white;
+}
+/* * premium section */
 div.premium-section {
   border: 1px solid rgba(0, 0, 0, 21%);
   background-color: white;
   border-radius: 25px;
+  height: 567px;
+  width: 385px;
+}
+div.premium-section img {
+  margin-top: 1.5rem;
+  margin-left: 1.5rem;
+}
+div.premium-section h3 {
+  margin-left: 2.5rem;
+  margin-top: 0.5rem;
+  font-size: 2.1rem;
+  color: var(--accent-green);
+}
+div.premium-section p {
+  margin-left: 2.7rem;
+  margin-top: 0.5rem;
+  font-size: 4.3rem;
+  font-weight: bold;
+}
+div.premium-section p span {
+  font-size: 1.5rem;
+}
+div.premium-section button {
+  margin-left: 1.7rem;
+  margin-top: 0.8rem;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 20px;
+  width: 20rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+  font-family: "Outfit", sans-serif;
+  background-color: var(--accent-green);
+  color: white;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+div.premium-section button:hover{
+  transform: scale(1.1);
+}
+div.premium-feature-cont {
+  /* border: 1px solid black; */
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+div.premium-feature-wrapper {
+  margin-top: 0.5rem;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+div.premium-feature-wrapper img {
+  /* border: 1px solid blue;
+  width: 1.5rem; */
+  height: 1.5rem;
+  margin-left: 3.5rem;
+  margin-top: 0.5rem;
+}
+div.premium-feature-wrapper li {
+  /* border: 1px solid red; */
+  margin-top: 0.5rem;
+  list-style: none;
+  font-weight: bold;
+  font-size: 1.2rem;
 }
